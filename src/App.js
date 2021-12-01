@@ -5,22 +5,23 @@ import Home from './pages/home';
 import Contact from './pages/contact';
 import FarmStore from './pages/farmStore';
 import PriceList from './pages/priceList';
+import NavBar from './components/navBar';
 
 function App() {
   return (
     <div className="page-container">
-      <div className="content-wrap">
-        
+      
+        <NavBar/>
         <Router>
           <Routes>
-          <Route exact path="/" component={Home} />
-          <Route exact path="/farmstore" component={FarmStore} />
-          <Route exact path="/contact" component={Contact} />
-          <Route exact path="/pricelist" component={PriceList} />
+          <Route exact path="/" element={<Home/>} />
+          <Route exact path="/farmstore" element={<FarmStore/>} />
+          <Route exact path="/contact" element={<Contact/>} />
+          <Route exact path="/pricelist" element={<PriceList/>} />
           </Routes>
         </Router>
         
-      </div>
+      
     </div>
   );
 }
