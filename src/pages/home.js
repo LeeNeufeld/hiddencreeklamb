@@ -18,28 +18,37 @@ function Home() {
   return (
     <div>
       <Box>
-        <Grid container textAlign="center" spacing={2}>
-          <Grid sx={{ display: { xs: "none", lg: "block" } }} lg={2} />
-          <Grid item xs={12} lg={8} sx={{ m: 3 }}>
+        <Grid
+          container
+          spacing={0}
+          direction="column"
+          alignItems="center"
+          justifyContent="center"
+        >
+          <Grid item xs={12} lg={12} sx={{ m: 3 }}>
             <img
-              width="50%"
+              width="100%"
               height="auto"
               className=" img-fluid "
               alt="Responsive"
               src={FarmSign}
             />
           </Grid>
-          <Grid sx={{ display: { xs: "none", lg: "block" } }} lg={2} />
+
           <Grid justifyItems="center" xs={12}>
             <Typography variant="h3" sx={{ m: 3 }} gutterBottom component="div">
               Welcome to Hidden Creek Farm
             </Typography>
           </Grid>
-          <Grid sx={{ display: { xs: "none", lg: "block" } }} lg={4} />
-          <Grid justifyItems="center" xs={12} lg={4}>
+
+          <Grid
+            xs={12}
+            justifyItems="center"
+            sx={{ width: "100%", maxWidth: 700 }}
+          >
             <Typography
               variant="h6"
-              sx={{ width: "100%", maxWidth: 700 }}
+              textAlign="center"
               sx={{ m: 3 }}
               component="div"
             >
@@ -50,18 +59,22 @@ function Home() {
               find in stores.
             </Typography>
           </Grid>
-          <Grid sx={{ display: { xs: "none", lg: "block" } }} lg={4} />
-          <Grid sx={{ display: { xs: "none", lg: "block" } }} lg={2} />
-          <Grid item xs={12} lg={8} sx={{ m: 3 }}>
-            <img
-              width="100%"
-              height="auto"
-              className=" img-fluid "
-              alt="Responsive"
-              src={SheepSunset}
-            />
-          </Grid>
-          <Grid sx={{ display: { xs: "none", lg: "block" } }} lg={2} />
+          <Box>
+            <Grid
+              item
+              xs={12}
+              sx={{ m: 3, mb: 5 }}
+              sx={{ width: "100%", maxWidth: 800 }}
+            >
+              <img
+                width="100%"
+                height="auto"
+                className=" img-fluid "
+                alt="Responsive"
+                src={SheepSunset}
+              />
+            </Grid>
+          </Box>
         </Grid>
       </Box>
     </div>
