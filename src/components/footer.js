@@ -3,6 +3,8 @@ import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 import Link from "@mui/material/Link";
+import { FaFacebookSquare } from "react-icons/fa";
+import Map from "./map";
 
 function Footer() {
   return (
@@ -11,19 +13,15 @@ function Footer() {
         <Container>
           <Grid container spacing={2}>
             <Grid item xs={12} sm={4}>
-              <Box borderBottom={1}>Help</Box>
               <Box>
                 <Link href="/" color="inherit">
-                  Contact Us
+                  <FaFacebookSquare />
                 </Link>
               </Box>
             </Grid>
             <Grid item xs={12} sm={4}>
-              <Box borderBottom={1}>Help</Box>
               <Box>
-                <Link href="/" color="inherit">
-                  Contact Us
-                </Link>
+                <Map />
               </Box>
             </Grid>
             <Grid item xs={12} sm={4}>

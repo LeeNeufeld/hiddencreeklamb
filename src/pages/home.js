@@ -35,8 +35,20 @@ function Home() {
             />
           </Grid>
 
-          <Grid justifyItems="center" xs={12}>
-            <Typography variant="h3" sx={{ m: 3 }} gutterBottom component="div">
+          <Grid xs={12}>
+            <Typography
+              fontSize={{
+                lg: 30,
+                md: 20,
+                sm: 15,
+                xs: 10,
+              }}
+              fontWeight="bold"
+              textAlign="center"
+              sx={{ m: 3 }}
+              gutterBottom
+              component="div"
+            >
               Welcome to Hidden Creek Farm
             </Typography>
           </Grid>
@@ -47,25 +59,25 @@ function Home() {
             sx={{ width: "100%", maxWidth: 700 }}
           >
             <Typography
-              variant="h6"
+              fontSize={{
+                lg: 30,
+                md: 20,
+                sm: 15,
+                xs: 10,
+              }}
               textAlign="center"
               sx={{ m: 3 }}
               component="div"
             >
               Taste that old fashioned wholesome goodness with our Hidden Creek
-              Lamb. Raised naturally on the lush grasses of the Pacific
-              Northwest. Our ewes are bred for meat and not wool, therefore give
-              a far more superior flavor than the imported commercial cuts you
-              find in stores.
+              Lamb. Raised naturally, on the lush grasses of the Pacific
+              Northwest. Our ewes are bred for meat and not wool giving a far
+              more superior flavor than the imported commercial cuts you find in
+              stores.
             </Typography>
           </Grid>
-          <Box>
-            <Grid
-              item
-              xs={12}
-              sx={{ m: 3, mb: 5 }}
-              sx={{ width: "100%", maxWidth: 800 }}
-            >
+          <Box sx={{ m: 3 }}>
+            <Grid item xs={12} sx={{ width: "100%", maxWidth: 800 }}>
               <img
                 width="100%"
                 height="auto"
